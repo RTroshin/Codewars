@@ -1,5 +1,5 @@
 function countPositivesSumNegatives(input) {
-    var countPos = 0,
+    let countPos = 0,
         sumNeg = 0;
     if (input != null) {
         for (let i = 0; i < input.length; i++)
