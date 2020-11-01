@@ -1,6 +1,6 @@
-function reverseSeq(s) {
-	N = [];
-	for (; s > 0; s--)
-		N.push(s);
+const reverseSeq = n => {
+	var N = [];
+	for (; n > 0; n--)
+		N.push(n);
 	return N;
 };
