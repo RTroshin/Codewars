@@ -10,10 +10,9 @@ int main(void)
     
     printf("Input number: ");
     rc = input_number(&n);
-    if (rc)
-        return rc;
 
-    printf("Amount Odd numbers below n is %d\n", odd_count(n));
+    if (!rc)
+        printf("Amount Odd numbers below n is %d\n", odd_count(n));
     
     return rc;
 }
