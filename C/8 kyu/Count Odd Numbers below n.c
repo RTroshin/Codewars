@@ -5,7 +5,7 @@ long odd_count(long);
 
 int main(void)
 {
-    int n;
+    long n;
     int rc;
     
     printf("Input number: ");
@@ -32,8 +32,8 @@ int input_number(int *n)
         printf("Error! Incorrect value\n");
         return 2;
     }
-    else
-        return 0;
+
+    return 0;
 }
 
 long odd_count(long n) {
