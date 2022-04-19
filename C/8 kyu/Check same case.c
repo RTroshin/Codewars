@@ -7,14 +7,23 @@ int same_case(char, char);
 int main(void)
 {
     char a, b;
-    int rc;
+    int res, rc;
     
     printf("Input symbols: ");
     rc = input_symbol(&a, &b);
 
     if (!rc)
-        printf("Result: %d\n", same_case(a, b));
-    
+    {
+        res = same_case(a, b)
+
+        if (res == -1)
+            printf("One of the characters is not a letter");
+        if (res == 1)
+            printf("Both characters are the same case");
+        if (res == 0)
+            printf("Both characters are letters, but not the same case");
+    }
+
     return rc;
 }
 
