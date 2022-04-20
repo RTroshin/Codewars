@@ -1,7 +1,7 @@
 #include <stdio.h>
 #include <ctype.h>
 
-int input_symbols(char*, char*);
+int input_characters(char*, char*);
 int same_case(char, char);
 
 int main(void)
@@ -10,7 +10,7 @@ int main(void)
     int res, rc;
     
     printf("Input characters: ");
-    rc = input_symbol(&a, &b);
+    rc = input_characters(&a, &b);
 
     if (!rc)
     {
@@ -27,7 +27,7 @@ int main(void)
     return rc;
 }
 
-int input_symbols(char *a, char *b)
+int input_characters(char *a, char *b)
 {
     int rc;
     
