@@ -39,8 +39,10 @@ int input_str(char *str_in)
     return 0;
 }
 
-bool is_palindrome(const char *str_in)
-{
+bool is_palindrome(const char *str_in) {
+    if (!(str_in + 1))
+        return true;
+
     for (int i = 0, j = strlen(str_in) - 1; str_in[i]; ++i, --j)
         if (!(tolower(str_in[i]) == tolower(str_in[j])))
             return false;
