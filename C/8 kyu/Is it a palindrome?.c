@@ -40,11 +40,8 @@ int input_str(char *str_in)
 }
 
 bool is_palindrome(const char *str_in) {
-    if (!(str_in + 1))
-        return true;
-
-    for (int i = 0, j = strlen(str_in) - 1; str_in[i]; ++i, --j)
-        if (!(tolower(str_in[i]) == tolower(str_in[j])))
+    for (size_t i = 0, str_len = strlen(str_in); i < str_len / 2; ++i)
+        if (tolower(str_in[i]) != tolower(str_in[str_len - 1 - i]))
             return false;
 
     return true;
