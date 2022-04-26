@@ -11,12 +11,7 @@ int main(void)
     rc = input_number(&number);
 
     if (!rc)
-    {
-        if (even_or_odd(number))
-            printf("Number is Odd\n");
-        else
-            printf("Number is Even\n");
-    }
+        printf("Number is %s\n", even_or_odd(number));
 
     return rc;
 }
