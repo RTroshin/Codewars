@@ -12,7 +12,7 @@ int main(void)
     rc = input_number(&n);
 
     if (!rc)
-        printf("Amount Odd numbers below n is %d\n", odd_count(n));
+        printf("Amount Odd numbers below n is %ld\n", odd_count(n));
     
     return rc;
 }
@@ -21,7 +21,7 @@ int input_number(long *n)
 {
     int rc;
     
-    rc = scanf("%d", n);
+    rc = scanf("%ld", n);
     if (!rc)
     {
         printf("Error! Incorrect enter\n");
