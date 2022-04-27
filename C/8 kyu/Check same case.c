@@ -14,7 +14,7 @@ int main(void)
 
     if (!rc)
     {
-        res = same_case(a, b)
+        res = same_case(a, b);
 
         if (res == -1)
             printf("One of the characters is not a letter\n");
