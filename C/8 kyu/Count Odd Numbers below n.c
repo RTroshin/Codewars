@@ -17,7 +17,7 @@ int main(void)
     return rc;
 }
 
-int input_number(int *n)
+int input_number(long *n)
 {
     int rc;
     
