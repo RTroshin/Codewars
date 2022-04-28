@@ -38,10 +38,6 @@ int input_side(int *side)
         return 0;
 }
 
-int area_or_perimeter(int l , int w)
-{
-    if (l == w)
-        return l * w;
-    else
-        return 2 * (l + w);
+int area_or_perimeter(int l , int w) {
+    return l == w ? l * w : 2 * (l + w);
 }
