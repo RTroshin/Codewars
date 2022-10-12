@@ -1,2 +1,2 @@
 def multiply(n):
-    return n * 5**len(str(int((n**2)**0.5)))
+    return n * 5**sum([1 for i in str(n) if i.isdecimal()])
