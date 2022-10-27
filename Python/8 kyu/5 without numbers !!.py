@@ -1,2 +1,2 @@
 def unusual_five():
-    return len("Done!")
+    return len("Five!")
