@@ -1,18 +1,10 @@
 def up_array(arr):
-    new_arr = []
-    arr_len = len(arr)
-    arr[arr_len - 1] += 1
+    if not len(arr):
+        return None
 
-    for i in range(arr_len - 1, -1, -1):
-        if arr[i] < 0 or arr[i] > 10:
+    for i in arr:
+        if i < 0 or i > 9:
             return None
-        elif not arr[i] % 10:
-            new_arr.append(0)
-            arr[i - 1] += 1
-        else:
-            new_arr.append(arr[i])
-
-    if new_arr.count(0) == len(new_arr):
-        new_arr.append(1)
-
-    return new_arr[::-1]
+    else:
+        new_arr = [int(i) for i in str(int("10" + "".join([str(j) for j in arr])) + 1)]
+        return new_arr[1::] if new_arr[1] else new_arr[2::]
