@@ -1,2 +1,5 @@
 def remainder(a, b):
-    return (a % b if a > b else b % a) if a and b else 0
+    try:
+        return a % b if a > b else b % a
+    except ZeroDivisionError:
+        return None
