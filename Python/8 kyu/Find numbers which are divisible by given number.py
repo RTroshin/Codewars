@@ -1,2 +1,2 @@
-def divisible_by(numbers, divisor):
-    return [n for n in numbers if not n % divisor]
+def divisible_by(nums, div):
+    return [n for n in nums if not n % div]
