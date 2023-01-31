@@ -1,7 +1,10 @@
 def next_item(xs, item):
+    xs = iter(xs)
     try:
-        return xs[xs.index(item) + 1] if item in xs else None
-    except AttributeError:
-        return 13
+        while True:
+            if next(xs) == item:
+                return next(xs)
+    except StopIteration:
+        return None
     except IndexError:
         return None
