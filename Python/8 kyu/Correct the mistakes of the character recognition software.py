@@ -1,6 +1,5 @@
 def correct(str):
-    str = str.replace('0', 'O')
-    str = str.replace('1', 'I')
-    str = str.replace('5', 'S')
+    for ch_1, ch_2 in {'0': 'O', '1': 'I', '5': 'S'}.items():
+        str = str.replace(ch_1, ch_2)
 
     return str
