@@ -1,7 +1,5 @@
 def type_validation(variable, _type):
     if type(variable) == int:
-        _t = "int"
+        return "int" == _type
     elif type(variable) == str:
-        _t = "str"
-
-    return _t == _type
+        return "str" == _type
