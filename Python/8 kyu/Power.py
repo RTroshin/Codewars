@@ -1,7 +1,7 @@
-def number_to_pwr(number, p):
-    num = 1
+def number_to_pwr(num, p):
+    n = 1
 
     for i in range(p):
-        num *= number
+        n *= num
 
-    return num
+    return n
