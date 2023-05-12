@@ -3,6 +3,6 @@ def mul_by_n(lst, n):
 
     result = [x * n for x in lst]
 
-    print("Result: ", list(result)) # Check our result
+    print("Result: ", result) # Check our result
 
-    return list(result)
+    return result
