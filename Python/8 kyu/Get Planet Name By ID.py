@@ -1,6 +1,4 @@
 def get_planet_name(id):
-    name = ""
-
     match id:
         case 1: name = "Mercury"
         case 2: name = "Venus"
