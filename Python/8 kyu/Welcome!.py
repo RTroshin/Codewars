@@ -17,4 +17,4 @@ database = {'english': 'Welcome',
             'welsh': 'Croeso'}
 
 def greet(language):
-    return welcomes[language] if language in welcomes else 'Welcome'
+    return database[language] if language in database else 'Welcome'
