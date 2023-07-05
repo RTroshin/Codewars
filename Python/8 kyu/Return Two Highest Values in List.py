@@ -1,2 +1,2 @@
-def two_highest(arr):
-    return sorted(set(arr), reverse=True)[:2]
+def two_highest(arg1):
+    return sorted(set(arg1), reverse=True)[:2]
