@@ -1,2 +1,2 @@
 def summation(num):
-    return sum(list(range(num + 1)))
+    return sum(range(num + 1))
