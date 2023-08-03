@@ -1,2 +1,3 @@
 def rental_car_cost(d):
-    return d * 40 if d < 3 else d * 40 - 20 if 3 < d < 7 else d * 40 - 50
+    total = d * 40
+    return total if d < 3 else total - 20 if 3 < d < 7 else total - 50
