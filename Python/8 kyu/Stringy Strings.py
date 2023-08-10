@@ -1,2 +1,2 @@
 def stringy(size):
-    return "".join(['0' if i % 2 else '1' for i in range(size)])
+    return "".join([str(i % 2) for i in range(1, size + 1)])
