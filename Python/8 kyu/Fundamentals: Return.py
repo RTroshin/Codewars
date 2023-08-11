@@ -7,11 +7,11 @@ def multiply(a, b):
 def divide(a, b):
     return a / b
 
-# def mod(a, b):
-#     return
+def mod(a, b):
+    return a % b
 
 # def exponent(a, b):
-#     return
+#     return a * b
 
 def subt(a, b):
     return a - b
