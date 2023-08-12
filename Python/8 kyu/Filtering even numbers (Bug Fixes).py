@@ -1,5 +1,4 @@
 def kata_13_december(lst):
-    # Fix this code
     j = 0
     for i in range(len(lst)):
         if lst[i - j] % 2 == 0:
