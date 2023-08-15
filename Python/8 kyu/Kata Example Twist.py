@@ -1,4 +1,1 @@
-websites = []
-
-for i in range(1000):
-    websites.append("codewars")
+websites = ["codewars" for i in range(1000)]
