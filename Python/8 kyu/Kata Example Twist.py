@@ -1,1 +1,1 @@
-websites = ["codewars" for i in range(1000)]
+websites = ["codewars"] * 1000
