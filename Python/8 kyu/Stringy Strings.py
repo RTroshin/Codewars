@@ -1,2 +1,2 @@
 def stringy(size):
-    return "".join([str(i % 2) for i in range(1, size + 1)])
+    return "10" * (size // 2) + "1" * (size % 2)
