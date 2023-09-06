@@ -1,2 +1,1 @@
-websites_internal = websites
-websites_internal.append("codewars")
+websites.append("codewars")
