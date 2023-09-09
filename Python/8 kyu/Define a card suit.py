@@ -1,10 +1,10 @@
 def define_suit(card):
     match card[-1]:
         case 'C':
-            return 'clubs'
+            return "clubs"
         case 'D':
-            return 'diamonds'
+            return "diamonds"
         case 'H':
-            return 'hearts'
+            return "hearts"
         case 'S':
-            return 'spades'
+            return "spades"
