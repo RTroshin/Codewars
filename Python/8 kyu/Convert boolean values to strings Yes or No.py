@@ -1,5 +1,5 @@
 def bool_to_word(bool):
-    if bool == True:
+    if bool:
         return 'Yes'
     else:
         return 'No'
