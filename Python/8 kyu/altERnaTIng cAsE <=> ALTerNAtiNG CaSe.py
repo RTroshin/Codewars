@@ -1,2 +1,2 @@
-def to_alternating_case(string):
-    return ''.join([char.lower() if char.isupper() else char.upper() for char in string])
+def to_alternating_case(str):
+    return ''.join([ch.lower() if ch.isupper() else ch.upper() for ch in str])
