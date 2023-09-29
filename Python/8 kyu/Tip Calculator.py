@@ -1,13 +1,13 @@
 def calculate_tip(amount, rating):
     match rating.lower():
-        case 'terrible':
+        case "terrible":
             return amount
-        case 'poor':
+        case "poor":
             return int(-1 * amount * 5 // 100 * -1)
-        case 'good':
+        case "good":
             return int(-1 * amount * 10 // 100 * -1)
-        case 'great':
+        case "great":
             return int(-1 * amount * 15 // 100 * -1)
-        case 'excellent':
+        case "excellent":
             return int(-1 * amount * 20 // 100 * -1)
-    return 'Rating not recognised'
+    return "Rating not recognised"
