@@ -1,7 +1,7 @@
 def calculate_tip(amount, rating):
     match rating.lower():
         case "terrible":
-            return amount
+            return 0
         case "poor":
             return -1 * amount * 5 // 100 * -1
         case "good":
