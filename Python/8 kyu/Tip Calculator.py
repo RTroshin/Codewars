@@ -10,4 +10,5 @@ def calculate_tip(amount, rating):
             return -1 * amount * 15 // 100 * -1
         case "excellent":
             return -1 * amount * 20 // 100 * -1
-    return "Rating not recognised"
+        case _:
+            return "Rating not recognised"
