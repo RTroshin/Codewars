@@ -1,2 +1,2 @@
 def mystery():
-    return {'sanity': 'Hello'}
+    return {"sanity": "Hello"}
