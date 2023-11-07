@@ -1,2 +1,2 @@
 def remove(str):
-    return str.replace('!', '') + '!'
+    return f"{str.replace('!', '')}!"
