@@ -1,5 +1,5 @@
 def remove(str):
-    while str and str[-1] == '!':
+    while str.endswith('!'):
         str = str[:-1]
 
     return str
