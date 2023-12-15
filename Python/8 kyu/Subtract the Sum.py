@@ -1,4 +1,4 @@
-def subtract_sum(number):
+def subtract_sum(num):
     fruits = {"kiwi":      [1, 3, 24, 26, 47, 49, 68, 70, 91, 93],
               "pear":      [2, 21, 23, 42, 44, 46, 65, 67, 69, 88],
               "banana":    [4, 6, 25, 29, 48, 50, 71, 73, 92, 94, 96],
@@ -11,8 +11,8 @@ def subtract_sum(number):
               "cherry":    [20, 22, 41, 43, 62, 64, 66, 85, 87, 89]}
 
     while True:
-        number -= sum([int(n) for n in str(number)])
-        if number < 100:
-            for fruit, numbers in fruits.items():
-                if number in numbers:
+        num -= sum([int(n) for n in str(num)])
+        if num < 100:
+            for fruit, nums in fruits.items():
+                if num in nums:
                     return fruit
