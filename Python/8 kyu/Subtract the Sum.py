@@ -11,7 +11,7 @@ def subtract_sum(num):
               "cherry":    [20, 22, 41, 43, 62, 64, 66, 85, 87, 89]}
 
     while True:
-        num -= sum([int(n) for n in str(num)])
+        num -= sum(int(n) for n in str(num))
         if num < 100:
             for fruit, nums in fruits.items():
                 if num in nums:
