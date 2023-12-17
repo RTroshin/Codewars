@@ -10,7 +10,7 @@ def eval_object(v):
             return v['a'] * v['b']
         case '%':
             return v['a'] % v['b']
-        case '**':
+        case "**":
             return v['a'] ** v['b']
         case _:
             return 1
