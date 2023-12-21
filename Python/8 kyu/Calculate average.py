@@ -1,2 +1,2 @@
-def find_average(numbers):
-    return sum(numbers) / len(numbers) if numbers else 0
+def find_average(nums):
+    return sum(nums) / len(nums) if nums else 0
