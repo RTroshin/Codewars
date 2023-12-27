@@ -1,2 +1,2 @@
-def repeat_str(repeat, string):
-    return repeat * string
+def repeat_str(repeat, str):
+    return repeat * str
