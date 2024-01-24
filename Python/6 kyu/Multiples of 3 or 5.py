@@ -1,2 +1,2 @@
-def solution(number):
-    return sum([i for i in range(number) if not i % 3 or not i % 5])
+def solution(num):
+    return sum([i for i in range(num) if not i % 3 or not i % 5])
