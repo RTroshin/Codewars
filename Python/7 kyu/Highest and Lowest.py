@@ -1,3 +1,3 @@
 def high_and_low(nums):
     nums = sorted(list(map(int, nums.split())))
-    return str(nums[-1]) + ' ' + str(nums[0])
+    return f"{nums[-1]} {nums[0]}"
