@@ -1,5 +1,5 @@
-def switch_it_up(number):
-    match number:
+def switch_it_up(num):
+    match num:
         case 0:
             return "Zero"
         case 1:
