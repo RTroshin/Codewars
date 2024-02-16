@@ -8,4 +8,4 @@ def correct_polish_letters(str):
                    'ś': 's',
                    'ź': 'z'}
 
-    return ''.join([polish_alph[ch] if ch in "ąćęłńóśź" else ch for ch in str])
+    return ''.join(polish_alph[ch] if ch in "ąćęłńóśź" else ch for ch in str)
