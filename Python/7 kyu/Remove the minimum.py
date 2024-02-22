@@ -1,4 +1,4 @@
-def remove_smallest(numbers):
-    if numbers:
-        numbers.remove(min(numbers))
-    return numbers
+def remove_smallest(nums):
+    if nums:
+        nums.remove(min(nums))
+    return nums
