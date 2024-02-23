@@ -1,4 +1,3 @@
 def remove_smallest(nums):
-    if nums:
-        nums.remove(min(nums))
-    return nums
+    i = nums.index(min(nums)) if nums else 0
+    return nums[:i] + nums[i + 1:]
