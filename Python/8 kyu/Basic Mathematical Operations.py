@@ -1,10 +1,10 @@
-def basic_op(operator, value1, value2):
-    match operator:
+def basic_op(op, val1, val2):
+    match op:
         case '+':
-            return value1 + value2
+            return val1 + val2
         case '-':
-            return value1 - value2
+            return val1 - val2
         case '*':
-            return value1 * value2
+            return val1 * val2
         case '/':
-            return value1 / value2
+            return val1 / val2
