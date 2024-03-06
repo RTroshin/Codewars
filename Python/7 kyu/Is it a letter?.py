@@ -1,2 +1,2 @@
-def is_it_letter(s):
-    return s.isalpha()
+def is_it_letter(ch):
+    return ch.isalpha()
