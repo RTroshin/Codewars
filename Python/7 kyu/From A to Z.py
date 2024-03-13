@@ -1,4 +1,5 @@
 alph = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz"
 
 def gimme_the_letters(sp):
-    return alph[alph.index(sp.split('-')[0]):alph.index(sp.split('-')[1]) + 1]
+    sp = sp.split('-')
+    return alph[alph.index(sp[0]):alph.index(sp[1]) + 1]
