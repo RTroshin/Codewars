@@ -10,4 +10,4 @@ def possibly_perfect(key, answers):
         if key[i] != '_':
             resFalse.append(False) if key[i] != answers[i] else resFalse.append(True)
 
-    return True if True not in resTrue or False not in resFalse else False
+    return True not in resTrue or False not in resFalse
