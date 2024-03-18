@@ -1,13 +1,5 @@
 def possibly_perfect(key, answers):
-    resTrue = []
-    resFalse = []
-
-    for i in range(len(key)):
-        if key[i] != '_':
-            resTrue.append(True) if key[i] == answers[i] else resTrue.append(False)
-
-    for i in range(len(key)):
-        if key[i] != '_':
-            resFalse.append(False) if key[i] != answers[i] else resFalse.append(True)
+    resTrue = [True if key[i] != '_' and key[i] == answers[i] else False for i in range(len(key))]
+    resFalse = [False if key[i] != '_' and key[i] != answers[i] else True for i in range(len(key))]
 
     return True not in resTrue or False not in resFalse
