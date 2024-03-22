@@ -1,2 +1,2 @@
-def spacey(array):
-    return [array[0]] + [''.join(array[0:i]) + array[i] for i in range(1, len(array))]
+def spacey(arr):
+    return [arr[0]] + [''.join(arr[0:i]) + arr[i] for i in range(1, len(arr))]
