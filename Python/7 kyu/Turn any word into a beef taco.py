@@ -11,4 +11,4 @@ ingredients = {'a': "beef",
 
 def tacofy(word):
     word = word.lower()
-    return ["shell"] + [ingredients.get(ch) for ch in word if ch in "aeioutlcgs"] + ["shell"]
+    return f"shell {' '.join(ingredients.get(ch) for ch in word if ch in 'aeioutlcgs' )} shell".split()
