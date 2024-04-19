@@ -1,9 +1,4 @@
-ingredients = {'a': "beef",
-               'e': "beef",
-               'i': "beef",
-               'o': "beef",
-               'u': "beef",
-               't': "tomato",
+ingredients = {'t': "tomato",
                'l': "lettuce",
                'c': "cheese",
                'g': "guacamole",
@@ -11,4 +6,4 @@ ingredients = {'a': "beef",
 
 def tacofy(word):
     word = word.lower()
-    return f"shell {' '.join(ingredients.get(ch) for ch in word if ch in 'aeioutlcgs' )} shell".split()
+    return f"shell {' '.join('beef' if ch in 'aeiou' else ingredients.get(ch, '') for ch in word)} shell".split()
