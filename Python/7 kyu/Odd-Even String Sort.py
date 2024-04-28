@@ -1,2 +1,2 @@
-def sort_my_string(s):
-    return f"{''.join(s[i] for i in range(len(s)) if not i % 2)} {''.join(s[i] for i in range(len(s)) if i % 2)}"
+def sort_my_string(str):
+    return f"{''.join(str[i] for i in range(len(str)) if not i % 2)} {''.join(str[i] for i in range(len(str)) if i % 2)}"
