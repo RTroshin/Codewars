@@ -1,7 +1,7 @@
-def sum_of_minimums(numbers):
+def sum_of_minimums(nums):
     lstMin = []
 
-    for i in range(len(numbers)):
-        lstMin.append(min(numbers[i]))
+    for i in range(len(nums)):
+        lstMin.append(min(nums[i]))
 
     return sum(lstMin)
