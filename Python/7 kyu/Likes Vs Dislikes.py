@@ -1,9 +1,9 @@
 from preloaded import Like, Dislike, Nothing
 
 def like_or_dislike(lst):
-    res_state = Nothing
+    state = Nothing
 
-    for state in lst:
-        res_state = Nothing if res_state == state else state
+    for but in lst:
+        state = Nothing if state == but else but
     
-    return res_state
+    return state
