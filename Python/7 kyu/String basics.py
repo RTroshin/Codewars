@@ -1,2 +1,2 @@
 def get_users_ids(st):
-    return st.strip().replace("uid", '').replace('#', '').lower().split(", ")
+    return [ID[3:] for ID in st.strip().replace('#', '').lower().split(", ")]
