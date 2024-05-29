@@ -1,11 +1,11 @@
-def sum_of_integers_in_string(s):
+def sum_of_integers_in_string(str):
     lst = []
     num = ''
-    s += '.'
+    str += '.'
 
-    for i in range(len(s)):
-        if s[i].isdigit():
-            num += s[i]
+    for i in range(len(str)):
+        if str[i].isdigit():
+            num += str[i]
         else:
             if num:
                 lst.append(int(num))
