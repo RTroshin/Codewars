@@ -3,9 +3,9 @@ def sum_of_integers_in_string(str):
     num = ''
     str += '.'
 
-    for i in range(len(str)):
-        if str[i].isdigit():
-            num += str[i]
+    for ch in str:
+        if ch.isdigit():
+            num += ch
         else:
             if num:
                 lst.append(int(num))
