@@ -9,8 +9,6 @@ def sum_of_integers_in_string(str):
         else:
             if num:
                 lst.append(int(num))
-                num = ''
-            else:
-                num = ''
+            num = ''
 
     return sum(lst)
