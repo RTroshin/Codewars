@@ -1,14 +1,8 @@
 def sum_of_integers_in_string(str):
-    lst = []
-    num = ''
-    str += '.'
+    new_str = str
 
     for ch in str:
-        if ch.isdigit():
-            num += ch
-        else:
-            if num:
-                lst.append(int(num))
-            num = ''
+        if not ch.isdigit():
+            new_str = ' '.join(new_str.split(ch))
 
-    return sum(lst)
+    return sum(map(int, new_str.split()))
