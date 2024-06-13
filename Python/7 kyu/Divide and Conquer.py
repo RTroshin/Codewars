@@ -1,2 +1,2 @@
 def div_con(arr):
-    return sum([i for i in arr if type(i) == int]) - sum(map(int, [i for i in arr if type(i) == str]))
+    return sum([n for n in arr if type(n) == int]) - sum(map(int, [n for n in arr if type(n) == str]))
