@@ -14,4 +14,4 @@ def tunnel_digging(r):
             elif c in ":":
                 time += 10
     
-    return time
+    return time + (len(r) // 3) * 30
