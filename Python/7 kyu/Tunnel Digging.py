@@ -3,8 +3,7 @@ rock_dict = {'[' : 30, ']' : 30, '{' : 25, '}' : 25, '(' : 20, ')' : 20, '|' : 1
 def tunnel_digging(r):
     time = 0
 
-    for s in r:
-        for c in s.strip():
-            time += rock_dict.get(c)
+    for s in ''.join(r):
+        time += rock_dict.get(s, 0)
     
     return time + (len(r) // 3) * 30
