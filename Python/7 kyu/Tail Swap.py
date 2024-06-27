@@ -1,3 +1,3 @@
-def tail_swap(strings):
-    return [':'.join([strings[0].split(':')[0], strings[1].split(':')[1]])] +\
-           [':'.join([strings[1].split(':')[0], strings[0].split(':')[1]])]
+def tail_swap(str):
+    return [':'.join([str[0].split(':')[0], str[1].split(':')[1]])] +\
+           [':'.join([str[1].split(':')[0], str[0].split(':')[1]])]
