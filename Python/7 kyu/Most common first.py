@@ -1,11 +1,11 @@
-def most_common(s):
-    if not s:
+def most_common(str):
+    if not str:
         return ''
 
-    ch_first = s[0]
+    ch_first = str[0]
 
-    for c in s:
-        if s.count(c) > s.count(ch_first):
-            ch_first = c
+    for ch in str:
+        if str.count(ch) > str.count(ch_first):
+            ch_first = ch
 
-    return ch_first * s.count(ch_first) + s.replace(ch_first, '')
+    return ch_first * str.count(ch_first) + str.replace(ch_first, '')
