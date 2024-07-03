@@ -1,8 +1,5 @@
 def most_common(str):
-    if not str:
-        return ''
-
-    ch_first = str[0]
+    ch_first = str[0] if str else ''
 
     for ch in str:
         if str.count(ch) > str.count(ch_first):
