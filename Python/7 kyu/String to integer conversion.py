@@ -1,2 +1,3 @@
 def my_parse_int(str):
-    return int(str.strip()) if str.strip().isdigit() else "NaN"
+    str = str.strip()
+    return int(str) if str.isdigit() else "NaN"
