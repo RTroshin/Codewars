@@ -1,2 +1,2 @@
-def reverse_letter(st):
-    return ''.join([ch for ch in st if ch.isalpha()])[::-1]
+def reverse_letter(str):
+    return ''.join([ch for ch in str if ch.isalpha()])[::-1]
