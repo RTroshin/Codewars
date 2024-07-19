@@ -1,7 +1,7 @@
-lojban_dict = {1: "pa", 4: "vo", 7: "ze",
-               2: "re", 5: "mu", 8: "bi",
-               0: "no", 3: "ci", 6: "xa",
-               9: "so"}
+lojban_dict = {"no": '0', "pa": '1', "re": '2',
+               "ci": '3', "vo": '4', "mu": '5',
+               "xa": '6', "ze": '7', "bi": '8',
+               "so": '9'}
 
 def convert_lojban(lojban):
-    return ''.join(lojban_dict.get(int(i)) for i in str(lojban))
+    return int(''.join(lojban_dict.get(lojban[i: i + 2]) for i in range(0, len(lojban), 2)))
