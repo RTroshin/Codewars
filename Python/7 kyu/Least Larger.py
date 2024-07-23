@@ -1,2 +1,2 @@
-def least_larger(a, i):
-    return a.index(min(n for n in a if a[i] < n)) if a[i] != max(a) else -1
+def least_larger(arr, i):
+    return arr.index(min(n for n in arr if arr[i] < n)) if arr[i] != max(arr) else -1
