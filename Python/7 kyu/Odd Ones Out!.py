@@ -1,8 +1,8 @@
-def odd_ones_out(numbers):
+def odd_ones_out(nums):
     res = []
 
-    for n in numbers:
-        if numbers.count(n) % 2 == 0:
+    for n in nums:
+        if nums.count(n) % 2 == 0:
             res += [n]
 
     return res
