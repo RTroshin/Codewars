@@ -1,8 +1,8 @@
 def reverse_invert(lst):
     res = []
 
-    for i in range(len(lst)):
-        if isinstance(lst[i], int):
-            res.append((-1 if lst[i] > 0 else 1) * int((str(abs(lst[i]))[::-1])))
+    for n in lst:
+        if isinstance(n, int):
+            res.append((-1 if n > 0 else 1) * int((str(abs(n))[::-1])))
 
     return res
