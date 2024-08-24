@@ -1,8 +1,8 @@
-def divisible_by_last(n):
+def divisible_by_last(num):
     res = [False]
-    n = str(n)
+    num = str(num)
 
-    for i in range(len(n) - 1):
-        res.append(not (int(n[i]) == 0 or int(n[i + 1]) % int(n[i])))
+    for i in range(len(num) - 1):
+        res.append(not (int(num[i]) == 0 or int(num[i + 1]) % int(num[i])))
 
     return res
