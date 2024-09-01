@@ -1,11 +1,11 @@
-def triple_x(s):
-    if not s:
+def triple_x(str):
+    if not str:
         return False
 
-    for i in range(len(s)):
-        if s[i] == 'x' and s[i + 1] == 'x' and s[i + 2] == 'x':
+    for i in range(len(str)):
+        if str[i] == 'x' and str[i + 1] == 'x' and str[i + 2] == 'x':
             return True
-        elif s[i] == 'x' and s[i + 1] != 'x':
+        elif str[i] == 'x' and str[i + 1] != 'x':
             return False
 
     return False
