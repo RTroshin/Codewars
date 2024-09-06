@@ -1,8 +1,8 @@
-def adjacent_element_product(array):
-    max = array[0] * array[1]
+def adjacent_element_product(arr):
+    max = arr[0] * arr[1]
 
-    for i in range(len(array) - 1):
-        if max < array[i] * array[i + 1]:
-            max = array[i] * array[i + 1]
+    for i in range(len(arr) - 1):
+        if max < arr[i] * arr[i + 1]:
+            max = arr[i] * arr[i + 1]
 
     return max
