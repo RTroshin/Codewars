@@ -1,8 +1,8 @@
 def vowel_indices(word):
     res = []
 
-    for i in range(len(word)):
-        if word[i].lower() in "aeiouy":
+    for i, ch in enumerate(word):
+        if ch.lower() in "aeiouy":
             res.append(i + 1)
 
     return res
