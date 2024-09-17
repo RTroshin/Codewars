@@ -1,8 +1,8 @@
-def remove_duplicate_words(s):
+def remove_duplicate_words(str):
     res = []
 
-    for w in s.split():
-        if w not in res:
-            res.append(w)
+    for wrd in str.split():
+        if wrd not in res:
+            res.append(wrd)
 
     return ' '.join(res)
