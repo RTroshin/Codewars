@@ -1,8 +1,8 @@
 def remove_duplicate_words(str):
-    res = []
+    res = ''
 
     for wrd in str.split():
         if wrd not in res:
-            res.append(wrd)
+            res += ' ' + wrd
 
-    return ' '.join(res)
+    return res.strip()
