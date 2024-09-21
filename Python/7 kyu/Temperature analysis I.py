@@ -2,7 +2,6 @@ def lowest_temp(t):
     if not t:
         return None
 
-    t = t.split()
-    t = list(map(int, t))
+    t = list(map(int, t.split()))
 
     return min(t)
