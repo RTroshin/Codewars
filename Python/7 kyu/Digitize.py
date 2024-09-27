@@ -1,5 +1,4 @@
 def digitize(n):
-    n = list(str(n))
-    n = list(map(int, n))
+    n = list(map(int, list(str(n))))
 
     return n
