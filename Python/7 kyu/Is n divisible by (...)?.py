@@ -1,6 +1,6 @@
-def is_divisible(*lst):
-    for i in lst[1:]:
-        if lst[0] % i:
+def is_divisible(n, *lst):
+    for i in lst:
+        if n % i:
             return False
 
     return True
