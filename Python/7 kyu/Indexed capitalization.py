@@ -1,10 +1,10 @@
-def capitalize(s, ind):
+def capitalize(str, ind):
     res = ''
 
-    for i in range(len(s)):
+    for i in range(len(str)):
         if i in ind:
-            res += s[i].upper()
+            res += str[i].upper()
         else:
-            res += s[i]
+            res += str[i]
 
     return res
