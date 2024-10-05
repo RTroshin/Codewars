@@ -2,8 +2,7 @@ def close_to_zero(t):
     if not t:
         return 0
 
-    t = list(map(int, t.split()))
-    t.sort()
+    t = sorted(list(map(int, t.split())))
 
     res = max(t)
     for n in t:
