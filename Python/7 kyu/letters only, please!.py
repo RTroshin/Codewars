@@ -1,8 +1,8 @@
-def remove_chars(s):
+def remove_chars(str):
     res = ''
 
-    for c in s:
-        if c not in "0123456789.+,|()[]{}=@/~;^$'<>?-!*&:#%_" and c != '"':
-            res += c
+    for ch in str:
+        if ch not in "0123456789.+,|()[]{}=@/~;^$'<>?-!*&:#%_" and ch != '"':
+            res += ch
 
     return res
