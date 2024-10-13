@@ -2,7 +2,7 @@ def remove_chars(str):
     res = ''
 
     for ch in str:
-        if ch not in "0123456789.+,|()[]{}=@/~;^$'<>?-!*&:#%_" and ch != '"':
+        if ch.isalpha() or ch.isspace():
             res += ch
 
     return res
