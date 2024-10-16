@@ -1,10 +1,10 @@
-def password(st):
-    if len(st) < 8:
+def password(str):
+    if len(str) < 8:
         return False
 
     res_up, res_low, res_dig = False, False, False
 
-    for ch in st:
+    for ch in str:
         if ch.isupper():
             res_up = True
         if ch.islower():
