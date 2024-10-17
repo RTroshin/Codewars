@@ -7,9 +7,9 @@ def password(str):
     for ch in str:
         if ch.isupper():
             res_up = True
-        if ch.islower():
+        elif ch.islower():
             res_low = True
-        if ch.isdigit():
+        elif ch.isdigit():
             res_dig = True
 
     return res_up and res_low and res_dig
