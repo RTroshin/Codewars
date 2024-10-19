@@ -4,7 +4,7 @@ def password(str):
 
     res_up, res_low, res_dig = False, False, False
 
-    for ch in str:
+    for ch in set(str):
         if ch.isupper():
             res_up = True
         elif ch.islower():
