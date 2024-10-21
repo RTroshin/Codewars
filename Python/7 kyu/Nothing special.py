@@ -1,5 +1,5 @@
 def nothing_special(st):
-    if type(st) is not str:
+    if not isinstance(st, str):
         return "Not a string!"
 
     res = ''
