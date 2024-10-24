@@ -4,6 +4,6 @@ def find_missing(arr1, arr2):
 
     for i, n in enumerate(arr1):
         if i == len(arr1) - 1:
-            return arr1[i]
+            return n
         elif n != arr2[i]:
             return n
