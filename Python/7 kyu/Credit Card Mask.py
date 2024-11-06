@@ -8,6 +8,4 @@ def maskify(cc):
         if i < (len(cc) - 4):
             res += '#'
 
-    res += cc[-4:]
-
-    return res
+    return res + cc[-4:]
