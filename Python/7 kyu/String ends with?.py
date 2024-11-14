@@ -1,2 +1,2 @@
 def solution(text, ending):
-    return True if text[-len(ending):] == ending else False
+    return text[-len(ending):] == ending
