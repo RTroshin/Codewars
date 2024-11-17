@@ -1,8 +1,10 @@
 def validate_pin(pin):
-    if len(pin) != 4 and len(pin) != 6:
+    lenPin = len(pin)
+
+    if lenPin != 4 and lenPin != 6:
         return False
 
-    for i in range(len(pin)):
+    for i in range(lenPin):
         if not pin[i].isdigit():
             return False
 
