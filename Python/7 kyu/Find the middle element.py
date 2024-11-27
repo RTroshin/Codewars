@@ -1,2 +1,2 @@
-def gimme(input_array):
-    return input_array.index(sorted(input_array)[1])
+def gimme(arr):
+    return arr.index(sorted(arr)[1])
