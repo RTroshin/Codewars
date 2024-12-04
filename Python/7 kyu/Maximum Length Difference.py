@@ -5,6 +5,4 @@ def mxdiflg(a1, a2):
         for y in a2:
             res.append(abs(len(x) - len(y)))
 
-    resMax = max(res) if res else -1
-
-    return resMax
+    return max(res) if res else -1
