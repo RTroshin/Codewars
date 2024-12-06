@@ -1,7 +1,9 @@
 def is_sorted_and_how(arr):
-    if arr == sorted(arr):
+    sortArr = sorted(arr)
+
+    if arr == sortArr:
         return "yes, ascending"
-    elif arr == sorted(arr)[::-1]:
+    elif arr == sortArr[::-1]:
         return "yes, descending"
     else:
         return "no"
