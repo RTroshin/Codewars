@@ -1,8 +1,4 @@
 def mxdiflg(a1, a2):
-    res = []
-
-    for x in a1:
-        for y in a2:
-            res.append(abs(len(x) - len(y)))
+    res = [abs(len(x) - len(y)) for x in a1 for y in a2]
 
     return max(res) if res else -1
