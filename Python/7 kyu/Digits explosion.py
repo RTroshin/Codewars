@@ -1,7 +1,7 @@
-def explode(s):
+def explode(str):
     res = ''
 
-    for c in s:
-        res += c * int(c)
+    for ch in str:
+        res += ch * int(ch)
 
     return res
