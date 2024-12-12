@@ -1,7 +1,2 @@
 def explode(str):
-    res = ''
-
-    for ch in str:
-        res += ch * int(ch)
-
-    return res
+    return ''.join([ch * int(ch) for ch in str])
