@@ -1,10 +1,10 @@
-def switcheroo(s):
-    s = list(s)
+def switcheroo(str):
+    str = list(str)
 
-    for i in range(len(s)):
-        if s[i] == 'a':
-            s[i] = 'b'
-        elif s[i] == 'b':
-            s[i] = 'a'
+    for i in range(len(str)):
+        if str[i] == 'a':
+            str[i] = 'b'
+        elif str[i] == 'b':
+            str[i] = 'a'
 
-    return ''.join(s)
+    return ''.join(str)
