@@ -1,5 +1,5 @@
-def find_smallest(numbers, to_return):
+def find_smallest(nums, to_return):
     if to_return == "value":
-        return min(numbers)
+        return min(nums)
     elif to_return == "index":
-        return numbers.index(min(numbers))
+        return nums.index(min(nums))
