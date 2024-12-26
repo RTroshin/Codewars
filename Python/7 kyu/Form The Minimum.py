@@ -7,6 +7,4 @@ def min_value(digits):
 
     digits = ''.join(digits)
 
-    digits = int(digits)
-
-    return digits
+    return int(digits)
