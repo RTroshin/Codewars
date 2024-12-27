@@ -3,8 +3,6 @@ def min_value(digits):
 
     digits = sorted(digits)
 
-    digits = map(str, digits)
-
-    digits = ''.join(digits)
+    digits = ''.join(map(str, digits))
 
     return int(digits)
