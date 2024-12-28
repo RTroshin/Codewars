@@ -1,7 +1,5 @@
 def min_value(digits):
-    digits = set(digits)
-
-    digits = sorted(digits)
+    digits = sorted(set(digits))
 
     digits = ''.join(map(str, digits))
 
