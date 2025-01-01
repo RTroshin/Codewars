@@ -1,8 +1,7 @@
 def starts_with(st, prefix):
     if not prefix:
         return True
-
-    if not st:
+    elif not st:
         return False
 
     st = st.split()
