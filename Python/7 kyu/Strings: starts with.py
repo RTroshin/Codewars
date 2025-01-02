@@ -1,12 +1,10 @@
 def starts_with(st, prefix):
-    if not prefix:
-        return True
-    elif not st:
+    if not st and prefix:
         return False
 
     st = st.split()
 
-    if st[0] == prefix:
+    if not prefix or st[0] == prefix:
         return True
     else:
         return False
