@@ -4,7 +4,4 @@ def starts_with(st, prefix):
 
     st = st.split()
 
-    if not prefix or st[0] == prefix:
-        return True
-    else:
-        return False
+return not prefix or st[0] == prefix
