@@ -5,6 +5,4 @@ def initials(name):
     for n in name:
         res += n[0].upper() + '.'
 
-    res = res[:-1]
-
-    return res + name[-1][1:]
+    return res[:-1] + name[-1][1:]
