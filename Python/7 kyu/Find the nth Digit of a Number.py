@@ -4,9 +4,7 @@ def find_digit(num, nth):
 
     if nth > len(str(num)):
         return 0
-
-    num = str(abs(num))
     
-    res = num[-nth]
+    res = str(abs(num))[-nth]
 
     return int(res)
