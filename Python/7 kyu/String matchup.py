@@ -1,7 +1,7 @@
-def solve(array1, array2):
+def solve(arr1, arr2):
     res = []
 
-    for str in array2:
-        res.append(array1.count(str))
+    for str in arr2:
+        res.append(arr1.count(str))
 
     return res
