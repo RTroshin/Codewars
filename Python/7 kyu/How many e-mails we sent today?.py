@@ -6,6 +6,4 @@ def get_percentage(sent, limit):
     elif not limit:
         limit = 1000
 
-    res = int(sent / limit * 100)
-
-    return str(res) + '%'
+    return str(int(sent / limit * 100)) + '%'
