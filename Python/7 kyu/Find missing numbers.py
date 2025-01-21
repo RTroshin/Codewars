@@ -1,5 +1,5 @@
 def find_missing_numbers(arr):
-    if not arr or len(arr) < 2:
+    if len(arr) < 2:
         return []
 
     res = []
