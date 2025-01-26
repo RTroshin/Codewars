@@ -7,6 +7,4 @@ def sillycase(silly):
         else:
             res.append(silly[i].upper())
 
-    res = ''.join(res)
-
-    return res
+    return ''.join(res)
