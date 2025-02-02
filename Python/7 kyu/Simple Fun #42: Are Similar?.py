@@ -1,6 +1,6 @@
 def are_similar(a, b):
-    for i in range(len(a)):
-        if b.count(a[i]) != a.count(a[i]):
+    for n in a:
+        if b.count(n) != a.count(n):
             return False
 
     return True
