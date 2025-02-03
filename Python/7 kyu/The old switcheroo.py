@@ -7,6 +7,4 @@ def vowel_2_index(string):
         else:
             res.append(string[i])
 
-    res = ''.join(res)
-
-    return res
+    return ''.join(res)
