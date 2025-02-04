@@ -1,10 +1,10 @@
-def vowel_2_index(string):
+def vowel_2_index(s):
     res = []
 
-    for i in range(len(string)):
-        if string[i].lower() in "aeiou":
+    for i in range(len(s)):
+        if s[i].lower() in "aeiou":
             res.append(str(i + 1))
         else:
-            res.append(string[i])
+            res.append(s[i])
 
     return ''.join(res)
