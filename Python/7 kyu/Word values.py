@@ -4,14 +4,14 @@ alphabet = {'a': 1, 'b': 2, 'c': 3, 'd': 4, 'e': 5,
             'p': 16, 'q': 17, 'r': 18, 's': 19, 't': 20,
             'u': 21, 'v': 22, 'w': 23, 'x': 24, 'y': 25, 'z': 26}
 
-def name_value(my_list):
+def name_value(myList):
     res = []
 
-    for i in range(len(my_list)):
-        res_sum = []
-        str = ''.join(my_list[i].split())
+    for i in range(len(myList)):
+        resSum = []
+        str = ''.join(myList[i].split())
         for ch in str:
-            res_sum.append(alphabet[ch])
-        res.append(sum(res_sum) * (i + 1))
+            resSum.append(alphabet[ch])
+        res.append(sum(resSum) * (i + 1))
 
     return res
