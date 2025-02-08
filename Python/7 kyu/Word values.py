@@ -9,8 +9,7 @@ def name_value(myList):
 
     for i in range(len(myList)):
         resSum = []
-        str = ''.join(myList[i].split())
-        for ch in str:
+        for ch in ''.join(myList[i].split()):
             resSum.append(alphabet[ch])
         res.append(sum(resSum) * (i + 1))
 
