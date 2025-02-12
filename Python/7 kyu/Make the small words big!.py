@@ -1,8 +1,7 @@
 def small_word_helper(sentence):
-    sentence = sentence.split()
     res = []
 
-    for word in sentence:
+    for word in sentence.split():
         if len(word) < 4:
             res.append(''.join(ch.upper() for ch in word))
         else:
