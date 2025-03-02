@@ -1,6 +1,6 @@
 def elimination(arr):
-    for i in range(len(arr)):
-        if arr.count(arr[i]) == 2:
-            return arr[i]
+    for n in arr:
+        if arr.count(n) == 2:
+            return n
 
     return None
