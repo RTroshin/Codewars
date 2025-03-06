@@ -1,18 +1,18 @@
-def check_password(s):
+def check_password(str):
     valUpper = False
     valLower = False
     valDigit = False
     valSpecial = False
 
-    if 7 < len(s) < 21:
-        for i in range(len(s)):
-            if s[i].isupper():
+    if 7 < len(str) < 21:
+        for i in range(len(str)):
+            if str[i].isupper():
                 valUpper = True
-            if s[i].islower():
+            if str[i].islower():
                 valLower = True
-            if s[i].isdigit():
+            if str[i].isdigit():
                 valDigit = True
-            if s[i] in "!@#$%^&*?":
+            if str[i] in "!@#$%^&*?":
                 valSpecial = True
     else:
         return "not valid"
