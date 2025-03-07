@@ -8,11 +8,11 @@ def check_password(str):
         for i in range(len(str)):
             if str[i].isupper():
                 valUpper = True
-            if str[i].islower():
+            elif str[i].islower():
                 valLower = True
-            if str[i].isdigit():
+            elif str[i].isdigit():
                 valDigit = True
-            if str[i] in "!@#$%^&*?":
+            elif str[i] in "!@#$%^&*?":
                 valSpecial = True
     else:
         return "not valid"
