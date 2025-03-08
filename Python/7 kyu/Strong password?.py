@@ -14,7 +14,5 @@ def check_password(str):
                 valDigit = True
             elif str[i] in "!@#$%^&*?":
                 valSpecial = True
-    else:
-        return "not valid"
 
     return "valid" if valUpper and valLower and valDigit and valSpecial else "not valid"
