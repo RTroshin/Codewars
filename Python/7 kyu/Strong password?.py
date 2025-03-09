@@ -5,14 +5,14 @@ def check_password(str):
     valSpecial = False
 
     if 7 < len(str) < 21:
-        for i in range(len(str)):
-            if str[i].isupper():
+        for ch in str:
+            if ch.isupper():
                 valUpper = True
-            elif str[i].islower():
+            elif ch.islower():
                 valLower = True
-            elif str[i].isdigit():
+            elif ch.isdigit():
                 valDigit = True
-            elif str[i] in "!@#$%^&*?":
+            elif ch in "!@#$%^&*?":
                 valSpecial = True
 
     return "valid" if valUpper and valLower and valDigit and valSpecial else "not valid"
