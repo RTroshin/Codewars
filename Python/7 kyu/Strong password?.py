@@ -1,8 +1,5 @@
 def check_password(str):
-    valUpper = False
-    valLower = False
-    valDigit = False
-    valSpecial = False
+    valUpper = valLower = valDigit = valSpecial = False
 
     if 7 < len(str) < 21:
         for ch in str:
