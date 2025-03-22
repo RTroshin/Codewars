@@ -1,8 +1,7 @@
 def make_password(phrase):
     res = ''
-    phrase = phrase.split()
 
-    for word in phrase:
+    for word in phrase.split():
         if word[0].lower() == 'i':
             res += '1'
         elif word[0].lower() == 'o':
