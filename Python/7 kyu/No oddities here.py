@@ -1,8 +1,8 @@
 def no_odds(values):
     res = []
 
-    for i in range(len(values)):
-        if not values[i] % 2:
-            res.append(values[i])
+    for n in values:
+        if not n % 2:
+            res.append(n)
 
     return res
