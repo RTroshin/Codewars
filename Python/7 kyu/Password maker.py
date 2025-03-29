@@ -1,14 +1,14 @@
 def make_password(phrase):
     res = ''
 
+    phrase = phrase.replace('i', '1')
+    phrase = phrase.replace('I', '1')
+    phrase = phrase.replace('o', '0')
+    phrase = phrase.replace('O', '0')
+    phrase = phrase.replace('s', '5')
+    phrase = phrase.replace('S', '5')
+
     for word in phrase.split():
-        if word[0].lower() == 'i':
-            res += '1'
-        elif word[0].lower() == 'o':
-            res += '0'
-        elif word[0].lower() == 's':
-            res += '5'
-        else:
-            res += word[0]
+        res += word[0]
 
     return res
