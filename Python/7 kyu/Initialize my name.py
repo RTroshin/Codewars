@@ -8,6 +8,6 @@ def initialize_names(name):
         return f"{name[0]} {name[1]}"
 
     for i in range(1, len(name) - 1):
-        res += name[i][0] + '. '
+        res += f"{name[i][0]}. "
 
     return f"{name[0]} {res}{name[-1]}"
