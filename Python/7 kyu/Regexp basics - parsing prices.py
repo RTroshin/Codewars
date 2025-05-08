@@ -7,6 +7,5 @@ def to_cents(amount):
         return None
 
     res = amount[1:].split('.')
-    res = int(res[0] + res[1])
 
-    return res
+    return int(res[0] + res[1])
