@@ -1,9 +1,7 @@
 def to_cents(amount):
     if not amount:
         return None
-    elif amount[0] != '$':
-        return None
-    elif '.' not in amount:
+    elif amount[0] != '$' or '.' not in amount:
         return None
 
     res = amount[1:].split('.')
