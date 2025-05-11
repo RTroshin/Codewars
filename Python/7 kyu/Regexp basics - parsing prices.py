@@ -4,4 +4,4 @@ def to_cents(amount):
 
     res = amount[1:].split('.')
 
-    return int(res[0] + res[1])
+    return int(res[0] + res[1]) if len(res[1]) == 2 else None
