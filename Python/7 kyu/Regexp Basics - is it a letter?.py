@@ -1,2 +1,2 @@
-def is_letter(s):
-    return s.isalpha() and len(s) == 1
+def is_letter(str):
+    return str.isalpha() and len(str) == 1
