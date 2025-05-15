@@ -1,8 +1,8 @@
-def whitespace(string):
+def whitespace(str):
     res = True
 
-    for i in range(len(string)):
-        if not string[i].isspace():
+    for i in range(len(str)):
+        if not str[i].isspace():
             res = False
 
     return res
