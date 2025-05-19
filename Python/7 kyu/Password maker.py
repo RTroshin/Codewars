@@ -7,6 +7,4 @@ def make_password(phrase):
     phrase = phrase.replace('s', '5')
     phrase = phrase.replace('S', '5')
 
-    res = ''.join([word[0] for word in phrase.split()])
-
-    return res
+    return ''.join([word[0] for word in phrase.split()])
