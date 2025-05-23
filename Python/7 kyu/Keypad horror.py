@@ -1,8 +1,7 @@
 def computer_to_phone(numbers):
-    numbers = list(numbers)
     res = ''
 
-    for n in numbers:
+    for n in list(numbers):
         if n == '1':
             res += '7'
         elif n == '2':
