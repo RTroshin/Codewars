@@ -1,7 +1,7 @@
-def computer_to_phone(numbers):
+def computer_to_phone(nums):
     res = ''
 
-    for n in list(numbers):
+    for n in list(nums):
         if n == '1':
             res += '7'
         elif n == '2':
