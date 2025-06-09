@@ -7,11 +7,11 @@ def get_issuer(num):
             return "VISA"
         elif strNum[:4] == "6011":
             return "Discover"
-        elif strNum[:2] == "51" or strNum[:2] == "52" or strNum[:2] == "53" or strNum[:2] == "54" or strNum[:2] == "55":
-            return "Mastercard"
+        elif strNum[0] == '5':
+            return {"51": "Mastercard", "52" : "Mastercard", "53" : "Mastercard", "54" : "Mastercard", "55" : "Mastercard"}[strNum[:2]]
     elif lenStrNum == 13 and strNum[0] == '4':
             return "VISA"
-    elif lenStrNum == 15 and strNum[:2] == "34" or strNum[:2] == "37":
-            return "AMEX"
+    elif lenStrNum == 15:
+            return {"34": "AMEX", "37" : "AMEX"}[strNum[:2]]
 
     return "Unknown"
