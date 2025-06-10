@@ -7,8 +7,8 @@ def get_issuer(num):
             return "VISA"
         elif strNum[:4] == "6011":
             return "Discover"
-        elif strNum[0] == '5':
-            return {"51": "Mastercard", "52" : "Mastercard", "53" : "Mastercard", "54" : "Mastercard", "55" : "Mastercard"}[strNum[:2]]
+        elif strNum[:2] in ["51", "52", "53", "54", "55"]:
+            return "Mastercard"
     elif lenStrNum == 13 and strNum[0] == '4':
             return "VISA"
     elif lenStrNum == 15:
