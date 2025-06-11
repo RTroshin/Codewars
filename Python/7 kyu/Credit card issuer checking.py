@@ -11,7 +11,7 @@ def get_issuer(num):
             return "Mastercard"
     elif lenStrNum == 13 and strNum[0] == '4':
             return "VISA"
-    elif lenStrNum == 15:
-            return {"34": "AMEX", "37" : "AMEX"}[strNum[:2]]
+    elif lenStrNum == 15 and strNum[:2] in ["34", "37"]:
+            return "AMEX"
 
     return "Unknown"
