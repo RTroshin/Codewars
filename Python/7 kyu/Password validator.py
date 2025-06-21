@@ -2,7 +2,7 @@ def password(str):
     if len(str) < 8:
         return False
 
-    res_up, res_low, res_dig = False, False, False
+    res_up = res_low = res_dig = False
 
     for ch in set(str):
         if ch.isupper():
