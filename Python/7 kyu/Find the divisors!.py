@@ -6,6 +6,4 @@ def divisors(integer):
     else:
         return f"{integer} is prime"
 
-    res = [i for i in range(2, integer) if not integer % i]
-
-    return res
+    return [i for i in range(2, integer) if not integer % i]
