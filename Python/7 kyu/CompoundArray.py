@@ -1,8 +1,7 @@
 def compound_array(a, b):
     res = []
-    minLen = min(len(a), len(b))
 
-    for i in range(minLen):
+    for i in range(min(len(a), len(b))):
         res.append(a[i])
         res.append(b[i])
 
