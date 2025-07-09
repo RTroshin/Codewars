@@ -6,6 +6,4 @@ def alphabetic(s):
             if ord(res[j]) > ord(res[j + 1]):
                 res[j], res[j + 1] = res[j + 1], res[j]
 
-    res = ''.join(res)
-
-    return res == s
+    return ''.join(res) == s
