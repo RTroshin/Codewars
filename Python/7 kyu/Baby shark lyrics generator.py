@@ -1,14 +1,14 @@
 def baby_shark_lyrics():
-    return "Baby shark, doo doo doo doo doo doo\n" * 3\
+    return f"Baby shark, {'doo ' * 5}doo\n" * 3\
             + "Baby shark!\n" +\
-            "Mommy shark, doo doo doo doo doo doo\n" * 3\
+            f"Mommy shark, {'doo ' * 5}doo\n" * 3\
             + "Mommy shark!\n" +\
-            "Daddy shark, doo doo doo doo doo doo\n" * 3\
+            f"Daddy shark, {'doo ' * 5}doo\n" * 3\
             + "Daddy shark!\n" + \
-            "Grandma shark, doo doo doo doo doo doo\n" * 3\
+            f"Grandma shark, {'doo ' * 5}doo\n" * 3\
             + "Grandma shark!\n" + \
-            "Grandpa shark, doo doo doo doo doo doo\n" * 3\
+            f"Grandpa shark, {'doo ' * 5}doo\n" * 3\
             + "Grandpa shark!\n" + \
-            "Let's go hunt, doo doo doo doo doo doo\n" * 3\
-            + "Let's go hunt!\n\
-            Run away,…"
+            f"Let's go hunt, {'doo ' * 5}doo\n" * 3\
+            + "Let's go hunt!\n"\
+            "Run away,…"
