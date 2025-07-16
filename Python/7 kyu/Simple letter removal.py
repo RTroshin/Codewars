@@ -9,9 +9,11 @@ def solve(st, k):
             if st[i] == alph:
                 st[i] = ''
                 count += 1
-        else:
+        elif ord(alph) < 122:
             alph = chr(ord(alph) + 1)
             i = 0
+        else:
+            return ''
         i += 1
 
     st = ''.join(st)
