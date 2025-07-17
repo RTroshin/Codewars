@@ -8,13 +8,15 @@ def solve(st, k):
         if alph in st:
             if st[i] == alph:
                 st[i] = ''
+                st = ''.join(st)
+                st = list(st)
                 count += 1
+            i += 1
         elif ord(alph) < 122:
             alph = chr(ord(alph) + 1)
             i = 0
         else:
             return ''
-        i += 1
 
     st = ''.join(st)
 
