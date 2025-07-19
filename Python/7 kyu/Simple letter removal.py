@@ -19,6 +19,4 @@ def solve(st, k):
         else:
             return ''
 
-    st = ''.join(st)
-
-    return st
+    return ''.join(st)
