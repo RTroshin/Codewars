@@ -4,10 +4,10 @@ def solve(st, k):
     count = 0
 
     while count != k:
-        for i in range(len(st)):
+        for ch in st:
             if alph in st:
-                if st[i] == alph:
-                    st[i] = ''
+                if ch == alph:
+                    st[st.index(ch)] = ''
                     count += 1
                     break
             elif ord(alph) < 122:
