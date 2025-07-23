@@ -1,13 +1,13 @@
-def solve(st, k):
-    st = list(st)
+def solve(str, k):
+    str = list(str)
     alph = 'a'
     count = 0
 
     while count != k:
-        for ch in st:
-            if alph in st:
+        for ch in str:
+            if alph in str:
                 if ch == alph:
-                    st[st.index(ch)] = ''
+                    str[str.index(ch)] = ''
                     count += 1
                     break
             elif ord(alph) < 122:
@@ -15,4 +15,4 @@ def solve(st, k):
             else:
                 return ''
 
-    return ''.join(st)
+    return ''.join(str)
