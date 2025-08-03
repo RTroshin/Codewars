@@ -7,4 +7,4 @@ def baby_shark_lyrics():
     for i in range(len(sharks)):
         res += f"{sharks[i]},{doo}\n" * 3 + f"{sharks[i]}!\n"
 
-    return res + "Run away,…"
+    return f"{res}Run away,…"
