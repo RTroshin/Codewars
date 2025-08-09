@@ -1,6 +1,5 @@
 def reject(seq, predicate):
-    res1 = map(predicate, seq)
-    res1 = list(res1)
+    res1 = list(map(predicate, seq))
     res2 = []
     
     for i in range(len(res1)):
