@@ -5,7 +5,4 @@ def generate_pairs(n):
         for j in range(1, n + 1):
             res.append([i - 1, j])
 
-    if n > 0:
-        res.append([n, n])
-
-    return res
+    return res + [[n, n]] if n > 0 else res
