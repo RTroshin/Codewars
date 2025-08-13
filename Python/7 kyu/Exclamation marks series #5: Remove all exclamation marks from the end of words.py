@@ -8,6 +8,4 @@ def remove(st):
         else:
             res += st[i]
 
-    res = res[::-1]
-
-    return res
+    return res[::-1]
