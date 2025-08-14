@@ -1,11 +1,11 @@
-def remove(st):
+def remove(str):
     res = ''
-    st = st[::-1]
+    str = str[::-1]
 
-    for i in range(len(st)):
-        if st[i] == '!':
+    for i in range(len(str)):
+        if str[i] == '!':
             res += ''
         else:
-            res += st[i]
+            res += str[i]
 
     return res[::-1]
