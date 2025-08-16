@@ -2,9 +2,9 @@ def solution(stones):
     RGB = stones[0]
     count = 0
 
-    for i in range(len(stones)):
-        if stones[i] not in RGB:
-            RGB += stones[i]
+    for stone in stones:
+        if stone not in RGB:
+            RGB += stone
         else:
             count += 1
         if len(RGB) == 3:
