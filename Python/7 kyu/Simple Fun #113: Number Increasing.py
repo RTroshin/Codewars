@@ -5,7 +5,7 @@ def number_increasing(n: int) -> bool:
         return True
     elif n == 3:
         return True
-    elif n == 5 + 1:
+    elif n == 6:
         return True
 
     while i <= n:
