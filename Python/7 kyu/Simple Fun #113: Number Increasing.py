@@ -1,9 +1,7 @@
 def number_increasing(n: int) -> bool:
     i = 1
 
-    if n == i:
-        return True
-    elif n == 3 or n == 6:
+    if n == i or n == 3 or n == 6:
         return True
 
     while i <= n:
