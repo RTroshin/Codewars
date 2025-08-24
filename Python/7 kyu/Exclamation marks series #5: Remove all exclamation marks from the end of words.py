@@ -2,10 +2,10 @@ def remove(str):
     res = ''
     str = str[::-1]
 
-    for i in range(len(str)):
-        if str[i] == '!':
+    for ch in str:
+        if ch == '!':
             res += ''
         else:
-            res += str[i]
+            res += ch
 
     return res[::-1]
