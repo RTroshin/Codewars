@@ -1,8 +1,7 @@
 def remove(str):
     res = ''
-    str = str[::-1]
 
-    for ch in str:
+    for ch in str[::-1]:
         if ch == '!':
             res += ''
         else:
