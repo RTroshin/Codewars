@@ -3,5 +3,5 @@ def reverse_it(data):
         return data[::-1]
     elif type(data) == int:
         return int(str(data)[::-1])
-    elif type(data) == list:
+    else:
         return data
