@@ -4,6 +4,10 @@ def digits(num):
 
     for i in range(len(num)):
         for j in range(len(num)):
-            res.append(int(num[i]) + int(num[j]))
+            if i != j:
+                res.append(int(num[i]) + int(num[j]))
 
-    return res
+    res = set(res)
+    res = list(res)
+
+    return sorted(res)
