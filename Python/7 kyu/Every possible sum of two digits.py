@@ -9,5 +9,6 @@ def digits(num):
 
     res = set(res)
     res = list(res)
+    res.sort()
 
     return sorted(res)
