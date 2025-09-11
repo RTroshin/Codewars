@@ -3,8 +3,8 @@ def diff(a, b):
     ab = a + b
     res = []
 
-    for i in range(len(ab)):
-        if ab.count(ab[i]) == 1:
-            res.append(ab[i])
+    for n in ab:
+        if ab.count(n) == 1:
+            res.append(n)
 
     return res
