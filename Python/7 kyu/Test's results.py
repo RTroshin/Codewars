@@ -3,8 +3,8 @@ def test(r):
     dictionary = {}
     class_average = 0
     
-    for i in range(len(r)):
-        class_average += r[i]
+    for n in r:
+        class_average += n
 
     class_average /= len(r)
 
