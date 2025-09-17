@@ -1,10 +1,7 @@
 def test(r):
     res = []
     dictionary = {}
-    class_average = 0
-    
-    for n in r:
-        class_average += n
+    class_average = sum(r)
 
     class_average /= len(r)
 
