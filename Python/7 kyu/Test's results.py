@@ -1,9 +1,7 @@
 def test(r):
     res = []
     dictionary = {}
-    class_average = sum(r)
-
-    class_average /= len(r)
+    class_average = sum(r) / len(r)
 
     dictionary['h'] = r.count(9) + r.count(10)
     dictionary['a'] = r.count(7) + r.count(8)
