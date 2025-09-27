@@ -9,6 +9,4 @@ def capitals_first(text):
         if text[i][0].islower():
             res2.append(text[i])
 
-    res = ' '.join(res1 + res2)
-
-    return res
+    return ' '.join(res1 + res2)
