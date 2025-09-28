@@ -6,7 +6,7 @@ def capitals_first(text):
     for i in range(len(text)):
         if text[i][0].isupper():
             res1.append(text[i])
-        if text[i][0].islower():
+        elif text[i][0].islower():
             res2.append(text[i])
 
     return ' '.join(res1 + res2)
