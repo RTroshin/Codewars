@@ -1,2 +1,7 @@
 def capital(capitals):
-    return ["The capital of " + capitals[0].get("state") + " is " + capitals[0].get("capital")]
+    res = []
+
+    for i in range(len(capitals)):
+        res.append("The capital of " + capitals[i].get("state") + " is " + capitals[i].get("capital"))
+
+    return res
