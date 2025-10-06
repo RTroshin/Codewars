@@ -8,6 +8,5 @@ def digits(num):
                 res.append(int(num[i]) + int(num[j]))
 
     res = list(set(res))
-    res.sort()
 
     return sorted(res)
