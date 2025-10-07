@@ -7,6 +7,4 @@ def digits(num):
             if i != j:
                 res.append(int(num[i]) + int(num[j]))
 
-    res = list(set(res))
-
-    return sorted(res)
+    return sorted(list(set(res)))
