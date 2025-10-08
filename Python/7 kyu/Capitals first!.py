@@ -1,9 +1,8 @@
 def capitals_first(text):
     res1 = []
     res2 = []
-    text = text.split()
 
-    for word in text:
+    for word in text.split():
         if word[0].isupper():
             res1.append(word)
         elif word[0].islower():
