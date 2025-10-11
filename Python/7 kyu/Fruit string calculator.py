@@ -10,8 +10,7 @@ def calculate(strng):
 
     if "gains" in strng:
         res = int(numLst[0]) + int(numLst[1])
-
-    if "loses" in strng:
+    elif "loses" in strng:
         res = int(numLst[0]) - int(numLst[1])
 
     return res
