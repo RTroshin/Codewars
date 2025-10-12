@@ -4,9 +4,9 @@ def calculate(strng):
 
     numLst = []
 
-    for i in range(len(strng)):
-        if strng[i].isdecimal():
-            numLst.append(strng[i])
+    for n in strng:
+        if n.isdecimal():
+            numLst.append(n)
 
     if "gains" in strng:
         res = int(numLst[0]) + int(numLst[1])
