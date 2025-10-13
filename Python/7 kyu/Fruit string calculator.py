@@ -6,11 +6,11 @@ def calculate(strng):
 
     for n in strng:
         if n.isdecimal():
-            numLst.append(n)
+            numLst.append(int(n))
 
     if "gains" in strng:
-        res = int(numLst[0]) + int(numLst[1])
+        res = numLst[0] + numLst[1]
     elif "loses" in strng:
-        res = int(numLst[0]) - int(numLst[1])
+        res = numLst[0] - numLst[1]
 
     return res
