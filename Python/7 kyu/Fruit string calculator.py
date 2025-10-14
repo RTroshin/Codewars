@@ -2,11 +2,7 @@ def calculate(strng):
     strng = strng.split()
     res = 0
 
-    numLst = []
-
-    for n in strng:
-        if n.isdecimal():
-            numLst.append(int(n))
+    numLst = [int(n) for n in strng if n.isdecimal()]
 
     if "gains" in strng:
         res = numLst[0] + numLst[1]
