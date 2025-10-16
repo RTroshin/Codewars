@@ -1,8 +1,8 @@
-def jumping_number(number):
-    number = str(number)
+def jumping_number(num):
+    num = str(num)
 
-    for i in range(len(number) - 1):
-        if not (number[i] + 1 == number[i + 1] or number[i] - 1 == number[i + 1]):
+    for i in range(len(num) - 1):
+        if not (num[i] + 1 == num[i + 1] or num[i] - 1 == num[i + 1]):
             return "Not!!"
 
     return "Jumping!!"
