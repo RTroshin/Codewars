@@ -1,2 +1,2 @@
-def remove(st):
-    return st.rstrip('!')
+def remove(str):
+    return str.rstrip('!')
