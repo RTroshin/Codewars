@@ -5,9 +5,7 @@ def disarium_number(number):
     for i in range(len(number)):
         sum += int(number[i]) ** (i + 1)
 
-    sum = str(sum)
-
-    if sum == number:
+    if str(sum) == number:
         return "Disarium !!"
     else:
         return "Not !!"
