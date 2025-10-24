@@ -1,8 +1,6 @@
 def disarium_number(num):
     num = str(num)
-    sum = 0
 
-    for i in range(len(num)):
-        sum += int(num[i]) ** (i + 1)
+    res = sum([int(num[i]) ** (i + 1) for i in range(len(num))])
 
-    return "Disarium !!" if str(sum) == num else "Not !!"
+    return "Disarium !!" if str(res) == num else "Not !!"
