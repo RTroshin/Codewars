@@ -5,8 +5,6 @@ def calculate(strng):
     numLst = [int(n) for n in strng if n.isdecimal()]
 
     if "gains" in strng:
-        res = numLst[0] + numLst[1]
+        return numLst[0] + numLst[1]
     elif "loses" in strng:
-        res = numLst[0] - numLst[1]
-
-    return res
+        return numLst[0] - numLst[1]
