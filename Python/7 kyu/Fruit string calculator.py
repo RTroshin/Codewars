@@ -1,10 +1,10 @@
-def calculate(strng):
-    strng = strng.split()
+def calculate(str):
+    str = str.split()
     res = 0
 
-    numLst = [int(n) for n in strng if n.isdecimal()]
+    numLst = [int(n) for n in str if n.isdecimal()]
 
-    if "gains" in strng:
+    if "gains" in str:
         return numLst[0] + numLst[1]
     elif "loses" in strng:
         return numLst[0] - numLst[1]
