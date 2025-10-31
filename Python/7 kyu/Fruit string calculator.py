@@ -6,5 +6,5 @@ def calculate(str):
 
     if "gains" in str:
         return numLst[0] + numLst[1]
-    elif "loses" in strng:
+    elif "loses" in str:
         return numLst[0] - numLst[1]
