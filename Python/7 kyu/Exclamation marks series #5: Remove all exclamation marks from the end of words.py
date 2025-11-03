@@ -1,5 +1,3 @@
 def remove(str):
     str = str.split()
-    res = [str[i].rstrip('!') for i in range(len(str))]
-    
-    return ' '.join(res)
+    return ' '.join([str[i].rstrip('!') for i in range(len(str))])
