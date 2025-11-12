@@ -8,3 +8,7 @@ def time_correct(t):
         return None
     if not t[0].isdecimal() or not t[1].isdecimal() or not t[2].isdecimal():
         return None
+
+    t = ':'.join(t)
+
+    return t
