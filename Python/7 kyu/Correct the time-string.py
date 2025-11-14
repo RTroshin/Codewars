@@ -6,7 +6,7 @@ def time_correct(t):
 
     if len(t) != 3:
         return None
-    if not t[0].isdecimal() or not t[1].isdecimal() or not t[2].isdecimal():
+    elif not t[0].isdecimal() or not t[1].isdecimal() or not t[2].isdecimal():
         return None
 
     return ':'.join(t)
