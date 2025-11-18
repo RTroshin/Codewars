@@ -12,16 +12,17 @@ def time_correct(t):
     if int(t[2]) > 59:
         t[2] = str(int(t[2]) - 60)
         t[1] = str(int(t[1]) + 1)
-        if t[2] == '0':
-            t[2] += '0'
     if int(t[1]) > 59:
         t[1] = str(int(t[1]) - 60)
         t[0] = str(int(t[0]) + 1)
-        if t[1] == '0':
-            t[1] += '0'
     if int(t[0]) > 23:
         t[0] = str(int(t[0]) - 24)
-        if t[0] == '0':
-            t[0] += '0'
+
+    if t[0] == '0':
+        t[0] += '0'
+    if t[1] == '0':
+        t[1] += '0'
+    if t[2] == '0':
+        t[2] += '0'
 
     return ':'.join(t)
