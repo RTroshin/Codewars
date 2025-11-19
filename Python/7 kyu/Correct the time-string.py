@@ -9,13 +9,13 @@ def time_correct(t):
     elif not t[0].isdecimal() or not t[1].isdecimal() or not t[2].isdecimal():
         return None
 
-    if int(t[2]) > 59:
+    while int(t[2]) > 59:
         t[2] = str(int(t[2]) - 60)
         t[1] = str(int(t[1]) + 1)
-    if int(t[1]) > 59:
+    while int(t[1]) > 59:
         t[1] = str(int(t[1]) - 60)
         t[0] = str(int(t[0]) + 1)
-    if int(t[0]) > 23:
+    while int(t[0]) > 23:
         t[0] = str(int(t[0]) - 24)
 
     if t[0] == '0':
