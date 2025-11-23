@@ -1,2 +1,2 @@
-def disarium_number(num):
-    return "Disarium !!" if sum(int(n) ** (i + 1) for i, n in enumerate(str(num))) == num else "Not !!"
+def disarium_number(n):
+    return "Disarium !!" if sum(int(d) ** (i + 1) for i, d in enumerate(str(n))) == n else "Not !!"
