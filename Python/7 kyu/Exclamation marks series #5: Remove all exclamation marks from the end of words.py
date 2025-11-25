@@ -1,2 +1,2 @@
 def remove(str):
-    return ' '.join(s.rstrip('!') or s for s in str.split())
+    return ' '.join(s.rstrip('!') for s in str.split())
