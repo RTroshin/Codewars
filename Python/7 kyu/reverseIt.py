@@ -1,9 +1,11 @@
 def reverse_it(data):
-    if type(data) == str:
+    t = type(data)
+
+    if t == str:
         return data[::-1]
-    elif type(data) == int:
+    elif t == int:
         return int(str(data)[::-1])
-    elif type(data) == float:
+    elif t == float:
         return float(str(data)[::-1])
     else:
         return data
