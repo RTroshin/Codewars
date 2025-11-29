@@ -3,5 +3,4 @@ def reverse_it(data):
 
     if t in [str, int, float]:
         return t(str(data)[::-1])
-    else:
-        return data
+    return data
