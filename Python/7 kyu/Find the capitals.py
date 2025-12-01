@@ -1,2 +1,2 @@
 def capitals(word):
-    return [word.index(ch) for ch in word if ch.isupper()]
+    return [i for i, ch in enumerate(word) if ch.isupper()]
