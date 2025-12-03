@@ -1,2 +1,2 @@
 def capital(capitals):
-    return ["The capital of " + (cap.get("state") or cap.get("country")) + " is " + cap.get("capital") for cap in capitals]
+    return ["The capital of " + (c.get("state") or c.get("country")) + " is " + c.get("capital") for c in capitals]
