@@ -1,10 +1,10 @@
-def case_sensitive(s):
+def case_sensitive(str):
     resBool = True
     res = []
 
-    for c in s:
-        if c.isupper():
+    for ch in str:
+        if ch.isupper():
             resBool = False
-            res.append(c)
+            res.append(ch)
 
     return [resBool, res]
