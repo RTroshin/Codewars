@@ -4,9 +4,7 @@ def time_correct(t):
 
     t = t.split(':')
 
-    if len(t) != 3:
-        return None
-    elif not t[0].isdecimal() or not t[1].isdecimal() or not t[2].isdecimal():
+    if len(t) != 3 or not t[0].isdecimal() or not t[1].isdecimal() or not t[2].isdecimal():
         return None
 
     while int(t[2]) > 59:
