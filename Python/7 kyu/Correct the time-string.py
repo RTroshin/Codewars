@@ -16,8 +16,8 @@ def time_correct(t):
     while int(t[0]) > 23:
         t[0] = str(int(t[0]) - 24)
 
-    if t[0] == '0':
-        t[0] += '0'
+    if len(t[0]) < 2:
+        t[0] = '0' + t[0]
     if t[1] == '0':
         t[1] += '0'
     if t[2] == '0':
