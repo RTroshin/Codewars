@@ -18,9 +18,9 @@ def time_correct(t):
 
     if len(t[0]) < 2:
         t[0] = '0' + t[0]
-    if t[1] == '0':
-        t[1] += '0'
-    if t[2] == '0':
-        t[2] += '0'
+    if len(t[1]) < 2:
+        t[1] = '0' + t[1]
+    if len(t[2]) < 2:
+        t[2] = '0' + t[2]
 
     return ':'.join(t)
