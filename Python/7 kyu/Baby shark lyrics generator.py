@@ -1,4 +1,1 @@
-def baby_shark_lyrics():
-    s = " shark"
-
-    return ''.join(f"{sh},{' doo' * 6}\n" * 3 + f"{sh}!\n" for sh in [f"Baby{s}", f"Mommy{s}", f"Daddy{s}", f"Grandma{s}", f"Grandpa{s}", "Let's go hunt"]) + "Run away,…"
+baby_shark_lyrics = lambda s = " shark": ''.join(f"{sh},{' doo' * 6}\n" * 3 + f"{sh}!\n" for sh in [f"Baby{s}", f"Mommy{s}", f"Daddy{s}", f"Grandma{s}", f"Grandpa{s}", "Let's go hunt"]) + "Run away,…"
