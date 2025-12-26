@@ -9,7 +9,7 @@ def sing():
             res.append("No more bottles of beer on the wall, no more bottles of beer.")
             res.append("Go to the store and buy some more, 99 bottles of beer on the wall.")
 
-    for i in range(1000, 1, -1):
+    for i in range(101, 1, -1):
         if i > 99:
             res.append("No more bottles of beer on the wall, no more bottles of beer.")
             res.append("Go to the store and buy some more, 99 bottles of beer on the wall.")
