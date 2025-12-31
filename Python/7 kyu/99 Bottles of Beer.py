@@ -4,7 +4,7 @@ def sing():
     for i in range(101, 1, -1):
         if i - 1 == 1:
             res.append(f"{i - 1} bottle of beer on the wall, {i - 1} bottle of beer.")
-            res.append(f"Take one down and pass it around, {i - 2} bottle of beer on the wall.")
+            res.append(f"Take one down and pass it around, no more bottles of beer on the wall.")
         elif i - 2 == 1:
             res.append(f"{i - 1} bottles of beer on the wall, {i - 1} bottles of beer.")
             res.append(f"Take one down and pass it around, {i - 2} bottle of beer on the wall.")
