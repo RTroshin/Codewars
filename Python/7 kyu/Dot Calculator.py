@@ -1,15 +1,14 @@
 def calculator(txt):
-    txt = txt.replace(' ', '')
+    str = txt.split()
+    x = str[0]
+    y = str[2]
+    symb = (str[1])
 
-    if '+' in txt:
-        txt = txt.split('+')
-        return txt[0] + txt[1]
-    elif '-' in txt:
-        txt = txt.split('-')
-        return txt[0][len(txt[1]):]
-    elif '*' in txt:
-        txt = txt.split('*')
-        return txt[0] * len(txt[1])
-    elif "//" in txt:
-        txt = txt.split("//")
-        return txt[0][:len(txt[0]) // len(txt[1])]
+    if symb == '+':
+        return str[0] + str[2]
+    elif symb == '-':
+        return str[0][len(str[2]):]
+    elif symb == '*':
+        return str[0] * len(str[2])
+    elif symb == '//':
+        return str[0][:len(str[0]) // len(str[2])]
