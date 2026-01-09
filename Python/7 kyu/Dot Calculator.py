@@ -1,13 +1,11 @@
 def calculator(txt):
     x, symb, y = txt.split()
-    x = len(x)
-    y = len(y)
 
     if symb == '+':
-        return '.' * (x + y)
+        return '.' * (len(x) + len(y))
     elif symb == '-':
-        return '.' * (x - y)
+        return '.' * (len(x) - len(y))
     elif symb == '*':
-        return '.' * (x * y)
+        return '.' * (len(x) * len(y))
     elif symb == '//':
-        return '.' * int(x / y)
+        return '.' * int(len(x) / len(y))
