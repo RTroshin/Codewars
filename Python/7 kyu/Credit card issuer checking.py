@@ -2,7 +2,7 @@ def get_issuer(num):
     strNum = str(num)
     lenStrNum = len(strNum)
 
-    if lenStrNum == 13 or lenStrNum == 16 and strNum[0] == '4':
+    if (lenStrNum == 13 or lenStrNum == 16) and strNum[0] == '4':
         return "VISA"
     elif lenStrNum == 15 and strNum[:2] in ["34", "37"]:
         return "AMEX"
