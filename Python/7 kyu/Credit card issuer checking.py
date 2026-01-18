@@ -1,14 +1,14 @@
-def get_issuer(num):
-    strNum = str(num)
-    lenStrNum = len(strNum)
+def get_issuer(n):
+    strN = str(n)
+    lenStrN = len(strN)
 
-    if (lenStrNum == 13 or lenStrNum == 16) and strNum[0] == '4':
+    if (lenStrN == 13 or lenStrN == 16) and strN[0] == '4':
         return "VISA"
-    elif lenStrNum == 15 and strNum[:2] in ["34", "37"]:
+    elif lenStrN == 15 and strN[:2] in ["34", "37"]:
         return "AMEX"
-    elif lenStrNum == 16 and strNum[:4] == "6011":
+    elif lenStrN == 16 and strN[:4] == "6011":
         return "Discover"
-    elif lenStrNum == 16 and strNum[:2] in ["51", "52", "53", "54", "55"]:
+    elif lenStrN == 16 and strN[:2] in ["51", "52", "53", "54", "55"]:
         return "Mastercard"
     
     return "Unknown"
