@@ -1,4 +1,4 @@
-def case_sensitive(str):
-    res = [ch for ch in str if ch.isupper()]
+def case_sensitive(s):
+    res = [c for c in s if c.isupper()]
 
     return [not res, res]
