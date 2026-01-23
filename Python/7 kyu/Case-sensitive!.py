@@ -1,4 +1,2 @@
 def case_sensitive(s):
-    res = [c for c in s if c.isupper()]
-
-    return [not res, res]
+    return [s.islower() or False, [c for c in s if c.isupper()]]
