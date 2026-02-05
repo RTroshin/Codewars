@@ -1,2 +1,1 @@
-def sort_array(value):
-    return ''.join(sorted(value))
+sort_array = lambda value: ''.join(sorted(value))
