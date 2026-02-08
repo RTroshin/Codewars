@@ -8,11 +8,9 @@ def solve(str):
         else:
             upper += 1
 
-    if lower > upper:
+    if lower >= upper:
         str = str.lower()
     elif lower < upper:
         str = str.upper()
-    else:
-        str = str.lower()
 
     return str
