@@ -10,7 +10,7 @@ def solve(str):
 
     if lower >= upper:
         str = str.lower()
-    elif lower < upper:
+    else:
         str = str.upper()
 
     return str
