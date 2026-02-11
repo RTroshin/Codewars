@@ -4,10 +4,14 @@ def count(a, t, x):
     for i in range(len(a)):
         nAdd = a[i]
         nSub = a[i]
-        while nAdd <= t or nSub > 0:
+        while nAdd < t:
             nAdd += x
+            if nAdd == t:
+                count += 1
+                break
+        while nSub > t:
             nSub -= x
-            if nAdd == x or nSub == x:
+            if nSub == t:
                 count += 1
                 break
 
