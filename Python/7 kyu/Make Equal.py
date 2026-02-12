@@ -2,8 +2,7 @@ def count(a, t, x):
     count = 0
 
     for i in range(len(a)):
-        nAdd = a[i]
-        nSub = a[i]
+        nAdd = nSub = a[i]
         while nAdd < t:
             nAdd += x
             if nAdd == t:
