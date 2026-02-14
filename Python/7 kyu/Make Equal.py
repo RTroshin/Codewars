@@ -2,17 +2,17 @@ def count(a, t, x):
     count = 0
 
     for i in range(len(a)):
-        nAdd = nSub = a[i]
+        Add = Sub = a[i]
         if a[i] <= t:
-            while nAdd < t:
-                nAdd += x
-                if nAdd == t:
+            while Add < t:
+                Add += x
+                if Add == t:
                     count += 1
                     break
         else:
-            while nSub > t:
-                nSub -= x
-                if nSub == t:
+            while Sub > t:
+                Sub -= x
+                if Sub == t:
                     count += 1
                     break
 
