@@ -4,6 +4,5 @@ def i_speak_french(sentence):
     lenSentence = len(sentence) - 1
 
     res = ["Baguette"] + ["baguette"] * lenSentence + ["Encore!"]
-    res = ' '.join(res)
 
-    return res
+    return ' '.join(res)
