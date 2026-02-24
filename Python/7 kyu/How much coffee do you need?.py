@@ -6,6 +6,6 @@ def how_much_coffee(events):
             coffeeCount += 2 if event.isupper() else 1
 
     if coffeeCount > 3:
-        coffeeCount = "You need extra sleep"
+        return "You need extra sleep"
 
     return coffeeCount
