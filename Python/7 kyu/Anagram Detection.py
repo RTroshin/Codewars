@@ -6,9 +6,6 @@ def is_anagram(test, original):
     test = test.lower()
     original = original.lower()
 
-    test == list(test)
-    original = list(original)
-
     if sorted(test) == sorted(original):
         return True
     else:
