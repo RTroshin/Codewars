@@ -7,5 +7,5 @@ def calculate(num1, operation, num2):
         return num1 / num2
     elif operation == '*':
         return num1 * num2
-    else:
-        return None
+
+    return None
