@@ -3,10 +3,7 @@ def is_anagram(test, original):
     if len(test) != len(original):
         return False
 
-    test = test.lower()
-    original = original.lower()
-
-    if sorted(test) == sorted(original):
+    if sorted(test.lower()) == sorted(original.lower()):
         return True
     else:
         return False
