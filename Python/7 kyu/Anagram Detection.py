@@ -1,5 +1,2 @@
 def is_anagram(test, original):
-    if len(test) != len(original):
-        return False
-    
-    return sorted(test.lower()) == sorted(original.lower())
+    return False if len(test) != len(original) else sorted(test.lower()) == sorted(original.lower())
