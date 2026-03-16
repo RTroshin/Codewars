@@ -1,5 +1,4 @@
 def stalin_sort(arr):
-    # The Party demands order. Provide it.
     # Hint: print("Расстрелять!") for each eliminated element
     res = [arr[0]]
 
