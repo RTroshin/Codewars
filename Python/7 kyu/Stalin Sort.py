@@ -1,5 +1,4 @@
 def stalin_sort(arr):
-    # Hint: print("Расстрелять!") for each eliminated element
     res = [arr[0]]
 
     for i in range(1, len(arr) - 1):
