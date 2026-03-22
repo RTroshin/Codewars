@@ -4,4 +4,4 @@ def seq_to_one(n):
     for i in range(n):
         res.append(i)
 
-    return list(reversed(res))
+    return res[::-1]
