@@ -1,7 +1,4 @@
 def seq_to_one(n):
-    res = []
-
-    for i in range(n):
-        res.append(i)
+    res = [i for i in range(n)]
 
     return res[::-1]
