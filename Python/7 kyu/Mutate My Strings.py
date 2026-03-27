@@ -8,6 +8,4 @@ def mutate_my_strings(s1,s2):
             s1 = ''.join(s1)
             res.append(s1)
 
-    res = '\n'.join(res) + '\n'
-
-    return res
+    return '\n'.join(res) + '\n'
