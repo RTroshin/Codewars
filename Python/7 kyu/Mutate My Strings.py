@@ -1,4 +1,4 @@
-def mutate_my_strings(s1,s2):
+def mutate_my_strings(s1, s2):
     res = [s1]
 
     for i in range(len(s1)):
