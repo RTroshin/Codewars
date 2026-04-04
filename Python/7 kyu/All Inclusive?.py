@@ -10,4 +10,4 @@ def contain_all_rots(strng, arr):
         if strng[:i] + strng[i + 1:] + strng[i] in arr:
             res += 1
 
-    return res == len(strng)
+    return res == len(arr[0])
