@@ -5,7 +5,7 @@ Count the Digitdef nb_dig(n, d):
     for i in range(n + 1):
         res_sqr.append(i * i)
 
-    for i in range(len(res_sqr)):
-        res_count += str(res_sqr[i]).count(str(d))
+    for n in res_sqr:
+        res_count += str(n.count(str(d))
 
     return res_count
