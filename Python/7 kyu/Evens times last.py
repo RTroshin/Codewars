@@ -6,6 +6,5 @@ def even_last(numbers):
             res.append(numbers[i])
 
     res = sum(res)
-    res *= numbers[len(numbers) - 1]
 
-    return res
+    return res * numbers[len(numbers) - 1]
