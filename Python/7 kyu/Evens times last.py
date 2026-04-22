@@ -5,6 +5,4 @@ def even_last(numbers):
         if not i % 2:
             res.append(numbers[i])
 
-    res = sum(res)
-
-    return res * numbers[len(numbers) - 1]
+    return sum(res) * numbers[len(numbers) - 1]
