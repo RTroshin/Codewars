@@ -1,8 +1,8 @@
-def even_last(numbers):
+def even_last(nums):
     res = []
-
-    for i in range(len(numbers)):
+    
+    for i in range(len(nums)):
         if not i % 2:
-            res.append(numbers[i])
+            res.append(nums[i])
 
-    return sum(res) * numbers[len(numbers) - 1]
+    return sum(res) * nums[len(nums) - 1]
