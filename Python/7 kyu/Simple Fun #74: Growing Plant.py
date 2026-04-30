@@ -10,5 +10,7 @@ def growing_plant(up_speed, down_speed, desired_height):
             break
         
         height -= down_speed
+    else:
+        return 1
     
     return days
